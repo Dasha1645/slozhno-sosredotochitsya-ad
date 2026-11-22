@@ -1,4 +1,27 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* Тема: значения основной (тёмной) темы */
+  --page-background-color: #000028;
+  --page-background-image: url('../images/cover-image-dark.png');
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --text-on-accent-color: #000028;
+  --title-color: #db00ff;
+  --contrast-color: #ff0070;
+  --contrast-hover-color: rgba(255, 0, 112, 0.4);
+  --rec-display: block;
+
+  /* Отступы мобильной версии */
+  --page-padding: 10px;
+  --zone-gap: 40px;
+  --section-gap: 50px;
+  --gallery-gap: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+    --zone-gap: 60px;
+    --section-gap: 80px;
+    --gallery-gap: 20px;
+  }
+}
